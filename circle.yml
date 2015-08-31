@@ -3,7 +3,7 @@ dependencies:
     - sudo apt-get update
     - sudo apt-get install mono-mcs nunit-console
     - wget https://www.nuget.org/nuget.exe
-    - mono ./nuget restore ChessDotNet.sln
+    - mono ./nuget.exe restore ChessDotNet.sln
 test:
   override:
     - xbuild /p:Configuration=Release /p:TargetFrameworkVersion=v4.5 ChessDotNet.sln
